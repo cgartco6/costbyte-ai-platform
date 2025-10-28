@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CostByte | AI Business Automation Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Security Header -->
+    <div class="security-banner">
+        <i class="fas fa-shield-alt"></i>
+        <span>Military-Grade Security Active | POPIA Compliant</span>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-brain"></i>
+                    <span>CostByte</span>
+                    <sup class="ai-badge">AI</sup>
+                </div>
+                <div class="nav-links">
+                    <a href="#ai-agents">AI Agents</a>
+                    <a href="#content-creator">Content Creator</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#dashboard">Dashboard</a>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="signupBtn">Start Free Trial</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Automate Your Business with <span class="gradient-text">Synthetic Intelligence</span></h1>
+                    <p>CostByte combines synthetic and strategic intelligence to create AI agents that complete complex tasks, generate content, and drive your business growth automatically.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="customerCount">0</span>
+                            <span class="stat-label">Paying Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="tasksCompleted">0</span>
+                            <span class="stat-label">Tasks Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="contentGenerated">0</span>
+                            <span class="stat-label">Content Pieces</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" id="getStartedBtn">
+                            <i class="fas fa-rocket"></i>
+                            Launch AI Agents
+                        </button>
+                        <button class="btn btn-light btn-large" id="demoBtn">
+                            <i class="fas fa-play"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="ai-network">
+                        <div class="node central-node">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="node agent-node" data-agent="synthetic">
+                            <i class="fas fa-robot"></i>
+                            <span>Synthetic AI</span>
+                        </div>
+                        <div class="node agent-node" data-agent="strategic">
+                            <i class="fas fa-chess-queen"></i>
+                            <span>Strategic AI</span>
+                        </div>
+                        <div class="node agent-node" data-agent="content">
+                            <i class="fas fa-video"></i>
+                            <span>Content Creator</span>
+                        </div>
+                        <div class="node agent-node" data-agent="security">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Security AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agents Section -->
+    <section class="section" id="ai-agents">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Agents & Helpers</h2>
+                <p>Powerful synthetic and strategic intelligence working together to automate complex tasks</p>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card" data-agent="synthetic">
+                    <div class="agent-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Synthetic Intelligence</h3>
+                    <p>Advanced AI that learns, adapts, and executes complex business tasks autonomously</p>
+                    <div class="agent-features">
+                        <span><i class="fas fa-check"></i> Task Automation</span>
+                        <span><i class="fas fa-check"></i> Data Processing</span>
+                        <span><i class="fas fa-check"></i> Pattern Recognition</span>
+                    </div>
+                    <button class="btn btn-outline agent-config-btn">Configure Agent</button>
+                </div>
+
+                <div class="agent-card" data-agent="strategic">
+                    <div class="agent-icon">
+                        <i class="fas fa-chess-queen"></i>
+                    </div>
+                    <h3>Strategic Intelligence</h3>
+                    <p>Make data-driven decisions and optimize business strategies with predictive analytics</p>
+                    <div class="agent-features">
+                        <span><i class="fas fa-check"></i> Market Analysis</span>
+                        <span><i class="fas fa-check"></i> Competitor Tracking</span>
+                        <span><i class="fas fa-check"></i> Trend Prediction</span>
+                    </div>
+                    <button class="btn btn-outline agent-config-btn">Configure Agent</button>
+                </div>
+
+                <div class="agent-card" data-agent="content">
+                    <div class="agent-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Content Creator AI</h3>
+                    <p>Generate and distribute engaging content across all social media platforms automatically</p>
+                    <div class="agent-features">
+                        <span><i class="fas fa-check"></i> Video Generation</span>
+                        <span><i class="fas fa-check"></i> Social Media Management</span>
+                        <span><i class="fas fa-check"></i> Campaign Optimization</span>
+                    </div>
+                    <button class="btn btn-outline agent-config-btn">Configure Agent</button>
+                </div>
+
+                <div class="agent-card" data-agent="business">
+                    <div class="agent-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Intelligence</h3>
+                    <p>Specialized agents for growth, security, compliance, and financial management</p>
+                    <div class="agent-features">
+                        <span><i class="fas fa-check"></i> Target Achievement</span>
+                        <span><i class="fas fa-check"></i> Fraud Detection</span>
+                        <span><i class="fas fa-check"></i> Compliance Monitoring</span>
+                    </div>
+                    <button class="btn btn-outline agent-config-btn">Configure Agent</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Creator Section -->
+    <section class="section dark-section" id="content-creator">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Content Creator</h2>
+                <p>Automatically create and distribute marketing content across all social media platforms</p>
+            </div>
+            <div class="content-platforms">
+                <div class="platform-grid">
+                    <div class="platform-card" data-platform="tiktok">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </div>
+                    <div class="platform-card" data-platform="instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="platform-card" data-platform="facebook">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="platform-card" data-platform="youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </div>
+                    <div class="platform-card" data-platform="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter/X</span>
+                    </div>
+                    <div class="platform-card" data-platform="snapchat">
+                        <i class="fab fa-snapchat"></i>
+                        <span>Snapchat</span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-creator-interface">
+                <div class="content-sidebar">
+                    <h4>Content Types</h4>
+                    <div class="content-types">
+                        <button class="content-type-btn active" data-type="video">
+                            <i class="fas fa-video"></i>
+                            Video Content
+                        </button>
+                        <button class="content-type-btn" data-type="image">
+                            <i class="fas fa-image"></i>
+                            Images & Graphics
+                        </button>
+                        <button class="content-type-btn" data-type="copy">
+                            <i class="fas fa-pen"></i>
+                            Copywriting
+                        </button>
+                        <button class="content-type-btn" data-type="campaign">
+                            <i class="fas fa-bullhorn"></i>
+                            Campaigns
+                        </button>
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div class="content-preview">
+                        <div class="preview-placeholder">
+                            <i class="fas fa-magic"></i>
+                            <p>AI-generated content will appear here</p>
+                        </div>
+                    </div>
+                    <div class="content-controls">
+                        <div class="form-group">
+                            <label for="contentTopic">Content Topic</label>
+                            <input type="text" id="contentTopic" placeholder="Enter topic for AI content generation...">
+                        </div>
+                        <div class="form-group">
+                            <label for="contentStyle">Content Style</label>
+                            <select id="contentStyle">
+                                <option value="professional">Professional</option>
+                                <option value="casual">Casual/Funny</option>
+                                <option value="educational">Educational</option>
+                                <option value="promotional">Promotional</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="generateContentBtn">
+                            <i class="fas fa-bolt"></i>
+                            Generate Content
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Choose Your AI Power</h2>
+                <p>Flexible pricing with multiple payment options. Start with a 7-day free trial.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">R299<span>/month</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic AI Agents</li>
+                        <li><i class="fas fa-check"></i> 100 Content Generations</li>
+                        <li><i class="fas fa-check"></i> 2 Social Media Platforms</li>
+                        <li><i class="fas fa-times"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-times"></i> Priority Support</li>
+                    </div>
+                    <button class="btn btn-outline">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">R799<span>/month</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <li><i class="fas fa-check"></i> All AI Agents</li>
+                        <li><i class="fas fa-check"></i> Unlimited Content</li>
+                        <li><i class="fas fa-check"></i> All Social Platforms</li>
+                        <li><i class="fas fa-check"></i> Advanced Analytics</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                    </div>
+                    <button class="btn btn-primary">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">Custom</div>
+                    </div>
+                    <div class="pricing-features">
+                        <li><i class="fas fa-check"></i> Custom AI Agents</li>
+                        <li><i class="fas fa-check"></i> White-label Solution</li>
+                        <li><i class="fas fa-check"></i> API Access</li>
+                        <li><i class="fas fa-check"></i> Dedicated Support</li>
+                        <li><i class="fas fa-check"></i> SLA Guarantee</li>
+                    </div>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="payment-methods">
+                <h4>Multiple Payment Options</h4>
+                <div class="payment-options">
+                    <div class="payment-option active" data-method="payfast">
+                        <i class="fas fa-credit-card"></i>
+                        <span>PayFast</span>
+                    </div>
+                    <div class="payment-option" data-method="stripe">
+                        <i class="fab fa-stripe"></i>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="payment-option" data-method="eft">
+                        <i class="fas fa-university"></i>
+                        <span>Direct EFT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="section dark-section" id="dashboard">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Performance Dashboard</h2>
+                <p>Monitor your AI agents and track business growth in real-time</p>
+            </div>
+            <div class="dashboard-preview">
+                <div class="dashboard-widgets">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h4>AI Agent Performance</h4>
+                            <span class="widget-badge success">Active</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="performance-metric">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label">Success Rate</span>
+                            </div>
+                            <div class="performance-chart">
+                                <!-- Chart would be implemented with Chart.js -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h4>Content Analytics</h4>
+                            <span class="widget-badge warning">Generating</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="analytics-grid">
+                                <div class="analytic">
+                                    <span class="analytic-value">1.2K</span>
+                                    <span class="analytic-label">Posts This Week</span>
+                                </div>
+                                <div class="analytic">
+                                    <span class="analytic-value">45K</span>
+                                    <span class="analytic-label">Total Engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h4>Revenue Tracking</h4>
+                            <span class="widget-badge info">Live</span>
+                        </div>
+                        <div class="widget-content">
+                            <div class="revenue-stats">
+                                <div class="revenue-item">
+                                    <span class="revenue-label">This Week</span>
+                                    <span class="revenue-value">R45,230</span>
+                                </div>
+                                <div class="revenue-item">
+                                    <span class="revenue-label">Payout Ready</span>
+                                    <span class="revenue-value">R28,450</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-brain"></i>
+                        <span>CostByte</span>
+                    </div>
+                    <p>Advanced AI automation platform combining synthetic and strategic intelligence for business growth.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>AI Agents</h4>
+                    <ul>
+                        <li><a href="#">Synthetic Intelligence</a></li>
+                        <li><a href="#">Strategic Intelligence</a></li>
+                        <li><a href="#">Content Creator</a></li>
+                        <li><a href="#">Business Intelligence</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">POPIA Compliance</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CostByte AI. All rights reserved. | Military-Grade Security | POPIA Compliant</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="authModals">
+        <!-- Login/Signup modals would be here -->
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/ai-agents.js"></script>
+    <script src="js/content-creator.js"></script>
+    <script src="js/payment-system.js"></script>
+    <script src="js/security.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>
